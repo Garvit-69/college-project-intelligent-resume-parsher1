@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Event Companion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>College Event Companion</h1>
+    <p>Your smart companion for events, skills & resume building.</p>
+  </header>
+
+  <main>
+    <!-- Interests Section -->
+    <section class="card" id="interests-section">
+      <h2>1. Choose Your Interests</h2>
+      <p>Select the areas you care about. We’ll show events that match them.</p>
+      <div id="interest-list" class="pill-container"></div>
+      <button id="save-interests-btn">Save Interests</button>
+      <p id="interest-status" class="status"></p>
+    </section>
+
+    <!-- Events Section -->
+    <section class="card" id="events-section">
+      <h2>2. Recommended Events</h2>
+      <p>These events match your interests.</p>
+      <div id="events-list"></div>
+    </section>
+
+    <!-- Skill Profile Section -->
+    <section class="card" id="profile-section">
+      <h2>3. Your Skill Profile</h2>
+      <div id="skills-summary"></div>
+
+      <h3>Auto-generated Resume Points</h3>
+      <ul id="resume-points"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Made for college students to track events, skills & achievements.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
