@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #1e293b;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.8);
+}
+
+.card h2, .card h3 {
+  margin-top: 0;
+}
+
+.pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.pill {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  cursor: pointer;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.pill input {
+  display: none;
+}
+
+.pill.selected {
+  background: #22c55e33;
+  border-color: #22c55e;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  color: #022c22;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.status {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #a5b4fc;
+}
+
+/* Events list */
+.event-card {
+  border-radius: 0.75rem;
+  border: 1px solid #1e293b;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #020617;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.event-meta {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #0f172a;
+  font-size: 0.75rem;
+  border: 1px solid #1e293b;
+  margin-right: 0.25rem;
+}
+
+.skill-chip {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: #172554;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+/* Skills */
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed #1e293b;
+  font-size: 0.9rem;
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+.skill-level {
+  font-size: 0.8rem;
+  color: #a5b4fc;
+}
+
+/* Resume points */
+#resume-points {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+#resume-points li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 640px) {
+  .event-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
